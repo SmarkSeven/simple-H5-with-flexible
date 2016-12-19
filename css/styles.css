@@ -5,28 +5,50 @@ body {
   padding: 0;
   margin: 0; }
 
-body, main {
+body,
+main {
   background-color: #68cdd5; }
 
 header {
   position: relative;
   height: 1.32812rem;
-  width: 10rem;
+  width: 100%;
   line-height: 1.3125rem;
   background-color: #22292c;
   color: white; }
-  header .back {
-    margin: 0 0.23438rem;
-    margin-bottom: -0.15625rem; }
-  header .more {
-    float: right;
-    margin-top: 0.625rem;
-    margin-right: 0.23438rem; }
-  header .title {
-    font-size: 32px;
-    position: absolute;
-    left: 50%;
-    margin-left: -0.5rem; }
+
+.head-back {
+  width: 1.5625rem;
+  height: 1.32812rem;
+  padding-left: 0.3125rem;
+  text-align: center; }
+  .head-back .icon-back {
+    width: 0.3125rem;
+    height: 1.32812rem;
+    line-height: 1.32812rem; }
+  .head-back .icon-back::after {
+    content: '';
+    display: inline-block;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff; }
+
+.head-title {
+  position: absolute;
+  top: 0;
+  left: 1.5625rem;
+  right: 1.5625rem;
+  line-height: 1.32812rem;
+  font-size: 32px;
+  text-align: center; }
+
+.head-more {
+  float: right;
+  margin-top: 0.625rem;
+  margin-right: 0.23438rem; }
 
 .arrow {
   margin-top: 0.3125rem;

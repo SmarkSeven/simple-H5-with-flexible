@@ -11,32 +11,56 @@ body {
     margin: 0;
 }
 
-body,main {
+body,
+main {
     background-color: rgb(104, 205, 213);
 }
 
 header {
     position: relative;
     height: rem(85px);
-    width: 10rem;
+    width: 100%;
     line-height: rem(84px);
     background-color: rgb(34, 41, 44);
     color: white;
-    .back {
-        margin: 0 rem(15px);
-        margin-bottom: rem(-10px);
+}
+
+.head-back {
+    width: rem(100px);
+    height: rem(85px);
+    padding-left: rem(20px);
+    text-align: center;
+    .icon-back {
+        width: rem(20px);
+        height: rem(85px);
+        line-height: rem(85px);
     }
-    .more {
-        float: right;
-        margin-top: rem(40px);
-        margin-right: rem(15px);
+    .icon-back::after {
+        content: '';
+        display: inline-block;
+        width: rem(20px);
+        height: rem(20px);
+        vertical-align: middle;
+        transform: rotate(45deg);
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
     }
-    .title {
-        font-size: 32px;
-        position: absolute;
-        left: 50%;
-        margin-left: rem(-32px);
-    }
+}
+
+.head-title {
+    position: absolute;
+    top: 0;
+    left: rem(100px);
+    right: rem(100px);
+    line-height: rem(85px);
+    font-size: 32px;
+    text-align: center;
+}
+
+.head-more {
+    float: right;
+    margin-top: rem(40px);
+    margin-right: rem(15px);
 }
 
 .arrow {
