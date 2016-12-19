@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0; }
 
-body {
+body, main {
   background-color: #68cdd5; }
 
 header {
