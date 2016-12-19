@@ -1,0 +1,56 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #68cdd5; }
+
+header {
+  position: relative;
+  height: 1.32812rem;
+  width: 10rem;
+  line-height: 1.3125rem;
+  background-color: #22292c;
+  color: white; }
+  header .back {
+    margin: 0 0.23438rem;
+    margin-bottom: -0.15625rem; }
+  header .more {
+    float: right;
+    margin-top: 0.625rem;
+    margin-right: 0.23438rem; }
+  header .title {
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.5rem; }
+
+.arrow {
+  margin-top: 0.3125rem;
+  margin-left: 0.3125rem; }
+
+p {
+  color: white;
+  margin-top: 3.59375rem;
+  margin-bottom: 2.65625rem;
+  padding: 0 1.40625rem;
+  font-size: 30px;
+  line-height: 1.6em; }
+
+main {
+  background-image: url("../images/task3_logo.png");
+  background-repeat: no-repeat;
+  background-position: 3.125rem 1.79688rem; }
+  main footer {
+    margin: 0 1.875rem;
+    color: white; }
+    main footer figure {
+      display: inline-block; }
+      main footer figure img {
+        margin-left: 0.23438rem;
+        margin-bottom: 0.23438rem; }
+    main footer figure.fig-right {
+      float: right; }
