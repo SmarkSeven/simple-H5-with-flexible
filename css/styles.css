@@ -18,6 +18,7 @@ header {
   color: white; }
 
 .head-back {
+  display: block;
   width: 1.5625rem;
   height: 1.32812rem;
   padding-left: 0.3125rem;
@@ -35,6 +36,12 @@ header {
     transform: rotate(45deg);
     border-left: 3px solid #fff;
     border-bottom: 3px solid #fff; }
+  .head-back .back-label {
+    font-size: 16px; }
+    [data-dpr="2"] .head-back .back-label {
+      font-size: 32px; }
+    [data-dpr="3"] .head-back .back-label {
+      font-size: 48px; }
 
 .head-title {
   position: absolute;
@@ -42,8 +49,12 @@ header {
   left: 1.5625rem;
   right: 1.5625rem;
   line-height: 1.32812rem;
-  font-size: 32px;
+  font-size: 18px;
   text-align: center; }
+  [data-dpr="2"] .head-title {
+    font-size: 36px; }
+  [data-dpr="3"] .head-title {
+    font-size: 54px; }
 
 .head-more {
   float: right;
@@ -59,8 +70,12 @@ p {
   margin-top: 3.59375rem;
   margin-bottom: 2.65625rem;
   padding: 0 1.40625rem;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 1.6em; }
+  [data-dpr="2"] p {
+    font-size: 30px; }
+  [data-dpr="3"] p {
+    font-size: 45px; }
 
 main {
   background-image: url("../images/task3_logo.png");

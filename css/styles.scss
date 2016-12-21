@@ -3,6 +3,16 @@ $font_size: 64px;
     @return $pixels / $font_size+rem;
 }
 
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
 html,
 body {
     width: 100%;
@@ -26,6 +36,7 @@ header {
 }
 
 .head-back {
+    display: block;
     width: rem(100px);
     height: rem(85px);
     padding-left: rem(20px);
@@ -45,6 +56,9 @@ header {
         border-left: 3px solid #fff;
         border-bottom: 3px solid #fff;
     }
+    .back-label {
+        @include font-dpr(16px);
+    }
 }
 
 .head-title {
@@ -53,7 +67,7 @@ header {
     left: rem(100px);
     right: rem(100px);
     line-height: rem(85px);
-    font-size: 32px;
+    @include font-dpr(18px);
     text-align: center;
 }
 
@@ -73,7 +87,7 @@ p {
     margin-top: rem(230px);
     margin-bottom: rem(170px);
     padding: 0 rem(90px);
-    font-size: 30px;
+    @include font-dpr(15px);
     line-height: 1.6em;
 }
 
